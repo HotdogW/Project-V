@@ -1,0 +1,106 @@
+#bodyBg{
+    background-color: rgb(238, 143, 159);
+}
+#name{
+    color: white;
+}
+.test{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width:20px;
+    height:20px; 
+    transition: transform 8s ease-out;
+}
+.heart1{
+    opacity: 0;
+    animation-name: heartAnimation;
+    animation-duration : 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.heart2{
+    opacity: 1;
+    animation-name: heartAnimation2;
+    animation-duration : 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+div{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.line1{
+    color: rgb(238, 143, 159);
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards
+}
+.line2{
+    color: rgb(238, 143, 159);
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards
+}
+.line3{
+    color: rgb(238, 143, 159);
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards
+}
+.line4{
+    color: rgb(238, 143, 159);
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-delay: 11s;
+    animation-fill-mode: forwards
+}
+.line5{
+    color: rgb(238, 143, 159);
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-delay: 14s;
+    animation-fill-mode: forwards
+}
+.line6{
+    color: rgb(238, 143, 159);
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-delay: 17s;
+    animation-fill-mode: forwards
+}
+.line7{
+    color: rgb(238, 143, 159);
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards
+}
+.second{
+    color: white;
+    animation-name: secondAnimation;
+    animation-duration : 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+@keyframes myAnimation {
+    from {color: rgb(238, 143, 159);}
+    to {color: white;}
+}
+@keyframes secondAnimation {
+    from {color: white;}
+    to {color: rgb(238, 143, 159);}
+}
+@keyframes heartAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} 
+@keyframes heartAnimation2{
+    from {scale: 1;}
+    to {scale:2;}
+}
