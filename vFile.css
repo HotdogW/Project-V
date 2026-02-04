@@ -16,7 +16,7 @@
     opacity: 0;
     animation-name: heartAnimation;
     animation-duration : 4s;
-    animation-delay: 2s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
 }
 .heart2{
