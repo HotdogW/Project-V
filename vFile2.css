@@ -1,3 +1,22 @@
 #body{
     background-color: rgb(136, 108, 228);
 }
+.mask1 {
+  mask-image: url(heart.png);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 0%;
+  animation-name: animation1;
+  animation-duration: 8s;  
+  animation-delay: 1s;
+  animation-fill-mode: forwards;  
+}
+div{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+@keyframes animation1 {
+    from{mask-size: 0%;}
+    to {mask-size: 200%;}
+}
