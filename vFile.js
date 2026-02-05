@@ -20,19 +20,27 @@ setTimeout(()=>{
     document.getElementById("line4").style.fontSize = "2em"
     document.getElementById("line4").style.marginBottom = "0em"
     document.getElementById("line5").style.fontSize = "0.83em"
+    document.getElementById("line6").style.fontSize = "0.83em"
+    document.getElementById("line7").style.fontSize = "0.83em"
 
     document.getElementById("line3").innerHTML = "I'll love you forever."
     document.getElementById("line4").innerHTML = "Happy Valentine's Day!"
-    document.getElementById("line5").innerHTML = "Click Me!"
     document.getElementById("test").innerHTML = "💜"
+    document.getElementById("line5").innerHTML = "Click Me!"
+    document.getElementById("line6").innerHTML = "please?"
+    document.getElementById("line7").innerHTML = "its really cool, i promise"
 
     document.getElementById("line3").classList.remove("second")
     document.getElementById("line4").classList.remove("second")
     document.getElementById("line5").classList.remove("second")
+    document.getElementById("line6").classList.remove("second")
+    document.getElementById("line7").classList.remove("second")
 
     document.getElementById("line3").classList.add("line1")
     document.getElementById("line4").classList.add("line2")
-    document.getElementById("line5").classList.add("line4")
+    document.getElementById("line5").classList.add("line5")
+    document.getElementById("line6").classList.add("line6")
+    document.getElementById("line7").classList.add("line7")
     document.getElementById("test").classList.add("test")
     document.getElementById("test").classList.add("heart1")
 
