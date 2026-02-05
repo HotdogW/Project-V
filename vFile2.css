@@ -38,7 +38,7 @@
 @media (orientation: portrait) { 
 .gridContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100vw 1fr 1fr 1fr;
     grid-template-rows: 1fr 20em 5em 5em;
     gap: 1em;
     grid-template-areas: 
@@ -49,6 +49,7 @@
 }
 .mask1 {
     width:100%;
+    max-width: 100%;
     height: auto;
     aspect-ratio: 4/3;
     mask-image: url(heart.png);
