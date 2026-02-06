@@ -2,7 +2,7 @@
     display: flex;
     align-content: start;
     justify-content: center;
-    background-color: rgb(136, 108, 228);
+    background-color: rgb(136, 108, 228); 
 }
 .box{
     background-color: rgb(130, 102, 222);
@@ -12,50 +12,93 @@
   color: black;
 }
 @media (orientation: landscape) { 
+.gridContainerContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: 
+    "container1" 
+    "container2"
+}
 .gridContainer{
     display: grid;
     grid-template-columns: minmax(30px, 1fr) 1fr minmax(30px, 1fr);
-    grid-template-rows: minmax(30px, 1fr) minmax(30px, 1fr) 5em 5em;
+    grid-template-rows: minmax(30px, 1fr) minmax(30px, 1fr);
     gap: 1em;
     grid-template-areas: 
     "box2 box1 box4"
-    "box3 box1 box4"
-    "box5 box5 box5 "
-    "box6 box6 box6";
+    "box3 box1 box4";
+
+    mask-image: url(heart.png);
+    mask-repeat: no-repeat;
+    mask-position: 50% 40%;
+    mask-size: 0%;
+    animation-name: animation1;
+    animation-duration: 8s;  
+    animation-delay: 1s;
+    animation-fill-mode: forwards; 
+    animation-timing-function: ease-in-out;
+}
+.gridContainer2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5em 100vh;
+    gap: 1em;
+    grid-template-areas: 
+    "box5 box5 box5"
+    "box6 box6 box7"
 }
 .mask1 {
     width:auto;
     height: 100vh;
     aspect-ratio: 4/3;
     margin-bottom: 10em;
-    mask-image: url(heart.png);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: 0%;
-    animation-name: animation1;
-    animation-duration: 8s;  
-    animation-delay: 1s;
-    animation-fill-mode: forwards; 
-    animation-timing-function: ease-in-out; 
+}
+.purp {
+    width:auto;
+    height: 100vh;
+    aspect-ratio: 4/3;
 }
 }
 @media (orientation: portrait) { 
-.gridContainer{
+.gridContainerContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1vh 20em 30em 5em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1em;
     grid-template-areas: 
-    "box1 box1 box1 box1"
-    "box2 box2 box3 box3"
-    "box4 box4 box4 box4"
-    "box5 box5 box5 box6";
+    "container1" 
+    "container2"
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20em 20em 40em ;
+    gap: 1em;
+    grid-template-areas: 
+    "box1"
+    "box2"
+    "box3"
+    "box4";
+}
+.gridContainer2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12em .5fr 5em;
+    gap: 1em;
+    grid-template-areas: 
+    "box5"
+    "box6"
+    "box7"
 }
 .mask1 {
     width: 100vw;
     height: auto;
     aspect-ratio: 4/3;
     mask-image: url(heart.png);
+    margin-top: 60%;
+    margin-bottom:60%;
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 0%;
@@ -64,6 +107,11 @@
     animation-delay: 1s;
     animation-fill-mode: forwards; 
     animation-timing-function: ease-in-out; 
+}
+.purp {
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 4/3;
 }
 }
 @keyframes animation1 {
