@@ -85,7 +85,7 @@
 .gridContainer2{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 12em .5fr 5em;
+    grid-template-rows: 12em .16fr 10em;
     gap: 1em;
     grid-template-areas: 
     "box5"
