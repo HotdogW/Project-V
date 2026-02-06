@@ -7,6 +7,10 @@
 .box{
     background-color: rgb(130, 102, 222);
 }
+.easterEgg {
+  text-decoration: none;
+  color: black;
+}
 @media (orientation: landscape) { 
 .gridContainer{
     display: grid;
@@ -39,7 +43,7 @@
 .gridContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 20em 5em 5em;
+    grid-template-rows: 1fr 20em 30em 5em;
     gap: 1em;
     grid-template-areas: 
     "box1 box1 box1 box1"
@@ -48,7 +52,7 @@
     "box5 box5 box5 box6";
 }
 .mask1 {
-    width:50vw;
+    width: 300px;
     height: auto;
     aspect-ratio: 4/3;
     mask-image: url(heart.png);
