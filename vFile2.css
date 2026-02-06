@@ -43,7 +43,7 @@
 .gridContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 20em 30em 5em;
+    grid-template-rows: 1vh 20em 30em 5em;
     gap: 1em;
     grid-template-areas: 
     "box1 box1 box1 box1"
