@@ -89,10 +89,13 @@
   text-decoration: none;
   color: black;
 }   
+.box{
+    background-color: blueviolet;
+}
 .gridContainerContainer{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr .3fr;
     gap: 1em;
     grid-template-areas: 
     "container1" 
@@ -113,7 +116,7 @@
 .gridContainer2{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 12em .16fr 10em;
+    grid-template-rows: 12em .16fr 30em;
     gap: 1em;
     grid-template-areas: 
     "box5"
@@ -123,12 +126,14 @@
 .gridContainer3{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 12em 10em .16fr;
+    grid-template-rows: 12em .16fr 5em 5em 5em;
     gap: 1em;
     grid-template-areas: 
     "box8"
     "box9"
     "box10"
+    "box11"
+    "box12"
 }
 .mask1 {
     width: 100vw;
@@ -147,6 +152,11 @@
     animation-timing-function: ease-in-out; 
 }
 .purp {
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 4/3;
+}
+.teak{
     width: 100vw;
     height: auto;
     aspect-ratio: 4/3;
