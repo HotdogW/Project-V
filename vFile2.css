@@ -10,9 +10,6 @@
   text-decoration: none;
   color: black;
 }    
-.box{
-    background-color: blueviolet;
-}
 .gridContainerContainer{
     display: grid;
     grid-template-columns: 1fr;
@@ -89,9 +86,6 @@
   text-decoration: none;
   color: black;
 }   
-.box{
-    background-color: blueviolet;
-}
 .gridContainerContainer{
     display: grid;
     grid-template-columns: 1fr;
