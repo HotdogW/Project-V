@@ -46,7 +46,7 @@
 .gridContainer2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5em 120vh;
+    grid-template-rows: 5em 125vh;
     gap: 1em;
     grid-template-areas: 
     "box5 box5 box5"
@@ -105,9 +105,6 @@
   text-decoration: none;
   color: black;
 }   
-.box{
-    background-color: blueviolet;
-}
 .gridContainerContainer{
     display: grid;
     grid-template-columns: 1fr;
@@ -133,7 +130,7 @@
 .gridContainer2{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10em .16fr 58em;
+    grid-template-rows: 10em .16fr 62em;
     gap: 1em;
     grid-template-areas: 
     "box5"
